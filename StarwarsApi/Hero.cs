@@ -1,4 +1,5 @@
 using System.Text.Json.Serialization;
+using Microsoft.VisualBasic;
 
 public class Hero
 {
@@ -14,7 +15,7 @@ public class Hero
     public string? Mass { get; set; }
     public int? Force { get; set; }
     public int Strength { get; set; }
-    public int? HP { get; set; }
+    public int HP { get; set; }
     public override string ToString()
     {
         return $"{Name}, {Gender}, Born: {BirthYear}, Height: {Height} cm, Mass: {Mass} kg ";
@@ -22,13 +23,6 @@ public class Hero
     public void InitStats()
     {
         HP = 100;
-        if (int.Parse(Mass, out int mass))
-        {
-            Strength = mass / 10;
-        }
-        else
-        {
-            Strength = new Random().Next(5, 15);
-        }
+        Strength = int.Parse(Mass) / 10;
     }
 }

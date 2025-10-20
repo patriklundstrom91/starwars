@@ -49,7 +49,9 @@ public class Program
         Console.WriteLine("--------------------------------");
         Console.WriteLine("press any key to start the battle!");
         Console.ReadLine();
-        var winner = Battle(selectedHeroes[0], selectedHeroes[1]);
+        Hero winner = Battle(selectedHeroes[0], selectedHeroes[1]);
+        Console.WriteLine("\n --------------------------------");
+        Console.WriteLine($"{winner.Name} winns and will rule the galaxy!");
         
     }
     static async Task<List<Hero>> GetHerosFromSwapi()
@@ -76,12 +78,31 @@ public class Program
         }
         return heroes;
     }
-    public Hero Battle(Hero hero1, Hero hero2)
+    public static Hero Battle(Hero hero1, Hero hero2)
     {
-        int[] points = { 0, 0 };
-        if (int.Parse(heroes[0].Height) > int.Parse(heroes[1].Height))
+        Console.WriteLine("\n BATTLE BEGINS \n");
+
+        hero1.InitStats();
+        hero2.InitStats();
+
+        Console.WriteLine($"{hero1.Name} VS {hero2.Name}");
+        Console.WriteLine("--------------------------------");
+        Console.WriteLine($"{hero1.Name} HP: {hero1.HP}, Strength: {hero1.Strength}");
+        Console.WriteLine($"{hero2.Name} HP: {hero2.HP}, Strength: {hero2.Strength}\n");
+        var attacker = hero1;
+        var defender = hero2;
+        while (hero1.HP > 0 && hero2.HP > 0)
         {
-            
+            Console.WriteLine($"{attacker.Name} attacks {defender.Name} with damage of {attacker.Strength}");
+            defender.HP -= attacker.Strength;
+            Console.WriteLine($"{defender.Name} has {Math.Max(defender.HP, 0)} HP left. \n ");
+            Task.Delay(1000).Wait();
+
+            var temp = attacker;
+            attacker = defender;
+            defender = temp;
         }
+        var winner = hero1.HP > 0 ? hero1 : hero2;
+        return winner;
     }
 }
