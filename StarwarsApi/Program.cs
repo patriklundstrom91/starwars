@@ -3,6 +3,7 @@ using System.Net.Http;
 using System.Reflection;
 using System.Text.Json;
 using System.Threading.Tasks;
+using Microsoft.VisualBasic;
 
 public class Program
 {
@@ -11,13 +12,44 @@ public class Program
     {
         var heroes = await GetHerosFromSwapi();
         Console.WriteLine("Welcome to StarWars, Pick your Heroes and let's see who survives to conquer the universe!");
-        foreach (var hero in heroes)
+        for (int i = 0; i < heroes.Count; i++)
         {
-            Console.WriteLine(hero);
+            Console.WriteLine($"{i + 1}: {heroes[i].Name}");
+        }
+        var selectedHeroes = new List<Hero>();
+        for (int pick = 1; pick <= 2; pick++)
+        {
+            Console.WriteLine("--------------------------------");
+            Console.Write($"Player {pick} pick hero by number: ");
+            if (int.TryParse(Console.ReadLine(), out int index) && index >= 1 && index <= heroes.Count)
+            {
+                selectedHeroes.Add(heroes[index - 1]);
+            }
+            else
+            {
+                Console.WriteLine("Not a valid number, try again...");
+                pick--;
+            }
         }
         Console.WriteLine("--------------------------------");
-        Console.Write("Player 1 pick hero by name: ");
-        var p1Pick = Console.ReadLine();
+        Console.WriteLine("You have chosen the following heroes: ");
+        foreach (var hero in selectedHeroes)
+        {
+            Console.WriteLine(hero);
+            if (int.Parse(hero.Height) < 70)
+            {
+                hero.Force = 200;
+            }
+            else if (int.Parse(hero.Height) < 100)
+            {
+                hero.Force = 150;
+            }
+
+        }
+        Console.WriteLine("--------------------------------");
+        Console.WriteLine("press any key to start the battle!");
+        Console.ReadLine();
+        var winner = Battle(selectedHeroes[0], selectedHeroes[1]);
         
     }
     static async Task<List<Hero>> GetHerosFromSwapi()
@@ -43,5 +75,13 @@ public class Program
             }
         }
         return heroes;
+    }
+    public Hero Battle(Hero hero1, Hero hero2)
+    {
+        int[] points = { 0, 0 };
+        if (int.Parse(heroes[0].Height) > int.Parse(heroes[1].Height))
+        {
+            
+        }
     }
 }
