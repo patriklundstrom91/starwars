@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\patri\\salt\\projects\\starwars\\StarwarsApi\\StarwarsApi.csproj": {}
+    "C:\\Users\\patri\\salt\\projects\\starwars\\starwarsApi\\StarwarsApi.csproj": {}
   },
   "projects": {
-    "C:\\Users\\patri\\salt\\projects\\starwars\\StarwarsApi\\StarwarsApi.csproj": {
+    "C:\\Users\\patri\\salt\\projects\\starwars\\starwarsApi\\StarwarsApi.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\patri\\salt\\projects\\starwars\\StarwarsApi\\StarwarsApi.csproj",
+        "projectUniqueName": "C:\\Users\\patri\\salt\\projects\\starwars\\starwarsApi\\StarwarsApi.csproj",
         "projectName": "StarwarsApi",
-        "projectPath": "C:\\Users\\patri\\salt\\projects\\starwars\\StarwarsApi\\StarwarsApi.csproj",
+        "projectPath": "C:\\Users\\patri\\salt\\projects\\starwars\\starwarsApi\\StarwarsApi.csproj",
         "packagesPath": "C:\\Users\\patri\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\patri\\salt\\projects\\starwars\\StarwarsApi\\obj\\",
+        "outputPath": "C:\\Users\\patri\\salt\\projects\\starwars\\starwarsApi\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
           "C:\\Users\\patri\\AppData\\Roaming\\NuGet\\NuGet.Config"
