@@ -13,7 +13,7 @@ public class Hero
     public string? Height { get; set; }
     [JsonPropertyName("mass")]
     public string? Mass { get; set; }
-    public int? Force { get; set; }
+    public int Force { get; set; }
     public int Strength { get; set; }
     public int HP { get; set; }
     public override string ToString()
@@ -22,6 +22,22 @@ public class Hero
     }
     public void InitStats()
     {
+        if (Mass.ToLower() == "unknown")
+        {
+            Mass = "60";
+        }
+        if (Height.ToLower() == "unknkown")
+        {
+            Height = "170";
+        }
+        if (int.Parse(Height) < 70)
+        {
+            Force = 20;
+        }
+        else if (int.Parse(Height) < 100)
+        {
+            Force = 15;
+        }
         HP = 100;
         Strength = int.Parse(Mass) / 10;
     }

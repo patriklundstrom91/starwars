@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "NeCRH4dBq4w=",
+  "dgSpecHash": "VQEtZRE7YtM=",
   "success": true,
-  "projectFilePath": "C:\\Users\\patri\\salt\\projects\\starwars\\starwarsApi\\StarwarsApi.csproj",
+  "projectFilePath": "C:\\Users\\patri\\salt\\projects\\starwars\\StarwarsApi\\StarwarsApi.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\patri\\.nuget\\packages\\microsoft.aspnetcore.openapi\\9.0.9\\microsoft.aspnetcore.openapi.9.0.9.nupkg.sha512",
     "C:\\Users\\patri\\.nuget\\packages\\microsoft.openapi\\1.6.17\\microsoft.openapi.1.6.17.nupkg.sha512",
