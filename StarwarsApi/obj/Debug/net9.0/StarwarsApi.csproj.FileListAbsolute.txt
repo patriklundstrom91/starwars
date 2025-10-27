@@ -32,3 +32,5 @@ C:\Users\patri\salt\projects\starwars\starwarsApi\obj\Debug\net9.0\refint\Starwa
 C:\Users\patri\salt\projects\starwars\starwarsApi\obj\Debug\net9.0\StarwarsApi.pdb
 C:\Users\patri\salt\projects\starwars\starwarsApi\obj\Debug\net9.0\StarwarsApi.genruntimeconfig.cache
 C:\Users\patri\salt\projects\starwars\starwarsApi\obj\Debug\net9.0\ref\StarwarsApi.dll
+C:\Users\patri\salt\projects\starwars\StarwarsApi\bin\Debug\net9.0\Player.dll
+C:\Users\patri\salt\projects\starwars\StarwarsApi\bin\Debug\net9.0\Player.pdb

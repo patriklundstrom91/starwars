@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\patri\\salt\\projects\\starwars\\Player\\Player.csproj": {}
+    "C:\\Users\\patri\\salt\\projects\\starwars\\PlayerModule\\Player.csproj": {}
   },
   "projects": {
-    "C:\\Users\\patri\\salt\\projects\\starwars\\Player\\Player.csproj": {
+    "C:\\Users\\patri\\salt\\projects\\starwars\\PlayerModule\\Player.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\patri\\salt\\projects\\starwars\\Player\\Player.csproj",
+        "projectUniqueName": "C:\\Users\\patri\\salt\\projects\\starwars\\PlayerModule\\Player.csproj",
         "projectName": "Player",
-        "projectPath": "C:\\Users\\patri\\salt\\projects\\starwars\\Player\\Player.csproj",
+        "projectPath": "C:\\Users\\patri\\salt\\projects\\starwars\\PlayerModule\\Player.csproj",
         "packagesPath": "C:\\Users\\patri\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\patri\\salt\\projects\\starwars\\Player\\obj\\",
+        "outputPath": "C:\\Users\\patri\\salt\\projects\\starwars\\PlayerModule\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
           "C:\\Users\\patri\\AppData\\Roaming\\NuGet\\NuGet.Config"

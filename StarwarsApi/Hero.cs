@@ -16,11 +16,12 @@ public class Hero
     public int Force { get; set; }
     public int Strength { get; set; }
     public int HP { get; set; }
+    public int PlayerId { get; set; }
     public override string ToString()
     {
         return $"{Name}, {Gender}, Born: {BirthYear}, Height: {Height} cm, Mass: {Mass} kg ";
     }
-    public void InitStats()
+    public void InitStats(int id)
     {
         if (Mass.ToLower() == "unknown")
         {
@@ -40,5 +41,6 @@ public class Hero
         }
         HP = 100;
         Strength = int.Parse(Mass) / 10;
+        PlayerId = id;
     }
 }

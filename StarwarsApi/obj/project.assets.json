@@ -46,6 +46,16 @@
             "related": ".xml"
           }
         }
+      },
+      "Player/1.0.0": {
+        "type": "project",
+        "framework": ".NETCoreApp,Version=v9.0",
+        "compile": {
+          "bin/placeholder/Player.dll": {}
+        },
+        "runtime": {
+          "bin/placeholder/Player.dll": {}
+        }
       }
     }
   },
@@ -110,12 +120,18 @@
         "newtonsoft.json.nuspec",
         "packageIcon.png"
       ]
+    },
+    "Player/1.0.0": {
+      "type": "project",
+      "path": "../PlayerModule/Player.csproj",
+      "msbuildProject": "../PlayerModule/Player.csproj"
     }
   },
   "projectFileDependencyGroups": {
     "net9.0": [
       "Microsoft.AspNetCore.OpenApi >= 9.0.9",
-      "Newtonsoft.Json >= 13.0.4"
+      "Newtonsoft.Json >= 13.0.4",
+      "Player >= 1.0.0"
     ]
   },
   "packageFolders": {
@@ -142,7 +158,11 @@
       "frameworks": {
         "net9.0": {
           "targetAlias": "net9.0",
-          "projectReferences": {}
+          "projectReferences": {
+            "C:\\Users\\patri\\salt\\projects\\starwars\\PlayerModule\\Player.csproj": {
+              "projectPath": "C:\\Users\\patri\\salt\\projects\\starwars\\PlayerModule\\Player.csproj"
+            }
+          }
         }
       },
       "warningProperties": {
