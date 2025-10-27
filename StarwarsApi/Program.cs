@@ -37,6 +37,7 @@ public class Program
             Console.WriteLine("You have chosen the following heroes: ");
             foreach (var hero in selectedHeroes)
             {
+                hero.InitStats();
                 Console.WriteLine(hero);
             }
             Console.WriteLine("--------------------------------");
@@ -81,9 +82,6 @@ public class Program
     public static Hero Battle(Hero hero1, Hero hero2)
     {
         Console.WriteLine("\n BATTLE BEGINS \n");
-
-        hero1.InitStats();
-        hero2.InitStats();
 
         Console.WriteLine($"{hero1.Name} VS {hero2.Name}");
         Console.WriteLine("--------------------------------");

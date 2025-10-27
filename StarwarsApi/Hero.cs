@@ -26,7 +26,7 @@ public class Hero
         {
             Mass = "60";
         }
-        if (Height.ToLower() == "unknkown")
+        if (Height.ToLower() == "unknown" || Height.ToLower() == "none")
         {
             Height = "170";
         }
